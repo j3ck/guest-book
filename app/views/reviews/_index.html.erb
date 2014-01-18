@@ -1,4 +1,9 @@
 <% @reviews.each do |review| %>
-	<%= review.name %>
-	<%= review.content %>
+	<div class="container"> 
+		<div class="row">
+			<h1><%= review.name %></h1>
+			<p><%= review.content %></p>
+			<h4><small><%= review.created_at %></small></h4>
+	    </div>
+    </div>
 <% end %>
