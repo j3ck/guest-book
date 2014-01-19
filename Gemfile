@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'foundation-rails'
+gem 'foundation-icons-sass-rails'
 
 gem 'rails', '4.0.2'
 gem 'sqlite3'
