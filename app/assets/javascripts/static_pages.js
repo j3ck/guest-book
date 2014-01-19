@@ -1,5 +1,4 @@
 $(document).ready(function() {
-	$('.review-form').hide();
 
 	$('.add-review').on('click', function() {
 		var b_val = $('.add-review').find("h2").text();
