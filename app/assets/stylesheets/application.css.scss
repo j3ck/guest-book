@@ -14,7 +14,7 @@
  *= require foundation
  *= require_tree .
  */
-
+ @import 'foundation-icons';
  @import "foundation_and_overrides";
 
  .add-review {
@@ -25,4 +25,8 @@
 
  .review-form {
  	display: none;
+ }
+
+ .medium {
+ 	font-size: 35px;
  }
