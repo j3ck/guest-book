@@ -1,27 +1,26 @@
 <%= form_for(review) do |f| %>
 <div class="row">
     <div class="large-8 large-centered column">
-  <% if review.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(review.errors.count, "error") %> prohibited this review from being saved:</h2>
+      <% if review.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(review.errors.count, "error") %> prohibited this review from being saved:</h2>
 
-      <ul>
-      <% review.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
+          <ul>
+          <% review.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+          </ul>
+        </div>
       <% end %>
-      </ul>
-    </div>
-  <% end %>
 
-  <div class="field">
-    <%= f.text_field :name, placeholder: "Name" %>
-  </div>
-  <div class="field">
-    <%= f.text_area :content, placeholder: "Your post" %>
-  </div>
-  <div class="actions">
-    <%= f.submit "Submit", class: "button radius success small" %>
-  </div>
-</div>
+      <div class="field">
+        <%= f.text_field :name, placeholder: "Name" %>
+      </div>
+      <div class="field">
+        <%= f.text_area :content, placeholder: "Your post" %>
+      </div>
+      <%= f.submit "Submit", class: "button radius success small" %>
+      <hr>
+    </div>
 </div>
 <% end %>
