@@ -1,5 +1,6 @@
 class StaticPagesController < ApplicationController
-	def home
-		@reviews = Review.order("created_at ASC")
-	end
+  def home
+    @reviews = Review.order("created_at DESC")
+    @review = Review.new
+  end
 end
