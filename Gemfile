@@ -5,6 +5,7 @@ gem 'foundation-icons-sass-rails', '3.0.0'
 
 gem 'rails', '4.0.2'
 gem 'responders', '1.1.2'
+gem 'devise', '3.5.1'
 gem 'sqlite3', '1.3.10'
 gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
