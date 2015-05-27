@@ -15,6 +15,9 @@
       <li class="has-form show-for-large-up">
         <%= link_to 'Log in', new_user_session_path, class:'button' %>
       </li>
+      <li class="has-form show-for-large-up">
+        <%= link_to "Sign out", destroy_user_session_path, method: :delete, class:'button' %>
+      </li>
     </ul>
   </section>
 </nav>

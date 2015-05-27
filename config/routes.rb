@@ -1,4 +1,8 @@
+require 'sidekiq/web'
+
 GuestBook::Application.routes.draw do
+
+  mount Sidekiq::Web => '/sidekiq'
 
   devise_for :users
   resources :reviews
