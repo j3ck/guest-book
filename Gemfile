@@ -3,8 +3,8 @@ source 'https://rubygems.org'
 gem 'foundation-rails', '5.0.3.1'
 gem 'foundation-icons-sass-rails', '3.0.0'
 
-gem 'rails', '4.0.2'
-gem 'responders', '1.1.2'
+gem 'rails', '4.2.0'
+gem 'responders', '2.1.0'
 gem 'sinatra', '1.4.6', require: false
 gem 'sidekiq', '3.3.4'
 gem 'devise', '3.5.1'
