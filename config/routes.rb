@@ -3,6 +3,7 @@ require 'sidekiq/web'
 GuestBook::Application.routes.draw do
 
   mount Sidekiq::Web => '/sidekiq'
+  mount Api::Mobile::Root => '/'
 
   devise_for :users
   resources :reviews
