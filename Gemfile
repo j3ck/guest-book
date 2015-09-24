@@ -16,6 +16,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails', '3.1.2'
 gem 'turbolinks', '2.5.3'
 gem 'grape', '0.13.0'
+gem 'grape-swagger-rails', '0.1.0'
 
 group :development do
   gem 'mailcatcher', '0.6.1'

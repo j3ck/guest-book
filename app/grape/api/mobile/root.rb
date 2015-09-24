@@ -1,3 +1,5 @@
+require 'grape-swagger'
+
 module Api::Mobile
   class Root < Grape::API
     format :json
@@ -7,5 +9,6 @@ module Api::Mobile
       {status: 'ok'}
     end
 
+    add_swagger_documentation hide_documentation_path: true
   end
 end

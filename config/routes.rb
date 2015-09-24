@@ -4,6 +4,7 @@ GuestBook::Application.routes.draw do
 
   mount Sidekiq::Web => '/sidekiq'
   mount Api::Mobile::Root => '/'
+  mount GrapeSwaggerRails::Engine => '/api'
 
   devise_for :users
   resources :reviews
