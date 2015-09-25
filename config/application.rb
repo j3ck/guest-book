@@ -8,6 +8,9 @@ Bundler.require(:default, Rails.env)
 
 module GuestBook
   class Application < Rails::Application
+    config.paths.add File.join('app', 'grape'), glob: File.join('**', '*.rb')
+    config.autoload_paths += Dir[Rails.root.join('app', 'grape', '*')]
+
     config.app_generators.scaffold_controller :responders_controller
 
     config.generators do |g|
