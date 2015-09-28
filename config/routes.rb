@@ -1,7 +1,7 @@
 require 'sidekiq/web'
 
 GuestBook::Application.routes.draw do
-
+  ActiveAdmin.routes(self)
   mount Sidekiq::Web => '/sidekiq'
   mount Api::Mobile::Root => '/'
   mount GrapeSwaggerRails::Engine => '/api'
