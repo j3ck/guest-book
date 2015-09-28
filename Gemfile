@@ -19,6 +19,7 @@ gem 'grape', '0.13.0'
 gem 'grape-swagger-rails', '0.1.0'
 gem 'bourbon', '< 4'
 gem 'activeadmin', :github => 'gregbell/active_admin'
+gem 'cancancan', '~> 1.10'
 
 group :development do
   gem 'mailcatcher', '0.6.1'

@@ -4,6 +4,15 @@
       <h1><%= link_to 'Guest book', root_path %></h1>
     </li>
   </ul>
+  <% if user_signed_in? && current_user.admin? %>
+    <section class="top-bar-section">
+      <ul class='left'>
+        <li>
+          <%= link_to 'Admin Panel', admin_dashboard_path %>
+        </li>
+      </ul>
+    </section>
+  <% end %>
 
   <section class="top-bar-section">
     <ul class="right">
